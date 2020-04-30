@@ -1,0 +1,19 @@
+<tr>
+  <td>
+    <%= image_tag product.image.tiny %>
+  </td>
+  <td>
+    <h4><%= product.name %></h4>
+    <br>
+    <p><%= product.description %></p>
+  </td>
+  <td>
+    <div>Item Price: <%= product.price %></div>
+  </td>
+  <td>
+    <div>Item Quantity: <%= quantity %></div>
+  </td>
+  <td>
+    <div>Item Total: <%= product.price * quantity %></div>
+  </td>
+</tr>
