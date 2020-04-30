@@ -1,2 +1,25 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Dashboard</h1>
+<table class="table jumbotron">
+<tr>
+  <td>
+    <h2>Products Count: </h2>
+  </td>
+  <td>
+    <h2><%=@products_count %></h2>
+  </td>
+  <td>
+    <%= link_to "Products", "/admin/products", class: 'btn btn-lg btn-primary' %>
+  </td>
+  </tr>
+  <tr>
+    <td>
+     <h2>Categories Count: </h2>
+  </td>
+    <td>
+     <h2><%=@categories_count%></h2>
+  </td>
+      <td>
+    <%= link_to "Categories", "/admin/products", class: 'btn btn-lg btn-primary' %>
+  </td>
+    </tr>
+
