@@ -2,6 +2,7 @@
 
   <header class="page-header">
     <h1><%= link_to @product.category.name, @product.category %> &raquo; <%= @product.name %></h1>
+   <%= raise %>  
   </header>
 
   <article class="product-detail">
@@ -21,7 +22,7 @@
           <dt>Quantity</dt>
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
-          <dd><%= @product.price %></dd>
+          <dd><%= number_to_currency @product.price, precision: 2 %></dd> 
         </dl>
       </div>
     </div>

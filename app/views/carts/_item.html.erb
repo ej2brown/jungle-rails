@@ -16,6 +16,6 @@
     <%= button_to add_item_cart_path(product_id: product.id), class: 'btn btn-xs btn-success' do %> + <% end %>
   </td>
   <td>
-    <%= product.price * quantity %>
+    <%= number_to_currency product.price * quantity, precision: 2  %>
   </td>
 </tr>
