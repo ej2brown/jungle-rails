@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-require 'rails_helper'
 
 RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
 
@@ -19,7 +18,7 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     end
     
   end
-  scenario "They see a products deatails" do
+  scenario "They see a products details" do
     # ACT
     visit root_path
     expect(page).to have_css 'article.product', count: 10
