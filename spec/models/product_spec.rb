@@ -6,13 +6,13 @@ RSpec.describe Product, type: :model do
 
   describe 'Validations' do
 
-    xit 'pass if name, price, quanity, and category_id is present' do
+    it 'pass if name, price, quanity, and category_id is present' do
       @category = Category.create(:name => 'test category')
       @product = @category.products.new(:name => 'product', :price => 1, :quantity => 1)
       expect(@product).to be_valid
     end
 
-    xit 'requires name to be present' do
+    it 'requires name to be present' do
       @category = Category.create(:name => 'test category')
       @product = @category.products.new(:name => 'product', :price => 1, :quantity => 1)
       @product.name = nil
@@ -21,21 +21,21 @@ RSpec.describe Product, type: :model do
       expect(@product.errors.full_messages).to include("Name can't be blank")
     end
 
-    xit 'price to be present' do
+    it 'price to be present' do
       @category = Category.new
       @product = Product.new
       @product.price = 1
       expect(@product.price).to be_present  
     end
 
-    xit 'quantity to be present' do
+    it 'quantity to be present' do
       @product = Product.new
       @category = Category.new
       @product.quantity = 1
       expect(@product.quantity).to be_present  
     end
 
-    xit 'category to be present' do
+    it 'category to be present' do
       @product = Product.new
       @category = Category.new
       @product.category_id = 1
