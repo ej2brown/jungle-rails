@@ -13,7 +13,6 @@ RSpec.describe User, type: :model do
   it 'requires name to be present' do
     @user = User.create(:first_name => 'John', :last_name => 'Doe', :email => 'johndoe@hotmail.com', :password => 'password', :password_confirmation => 'password')
     @user.password = nil
-    # expect(@product).not_to be_valid
     @user.valid?
     expect(@user.errors.full_messages).to include("Password can't be blank")
   end
