@@ -1,7 +1,48 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2.
 
+## Major Features
+### Products page displays products for purchase
+!["Adding Products to Cart"](https://github.com/ej2brown/jungle-rails/blob/master/docs/01_Product_List.png)
+
+### Displays Product Status badge
+!["Sold Out Badge"](https://github.com/ej2brown/jungle-rails/blob/master/docs/07_Badges.png)
+
+### User authentication with Bcrypt <br />
+!["Login Display"](https://github.com/ej2brown/jungle-rails/blob/master/docs/02_Login_Display.png)
+
+### User can add products to cart
+!["Adding Products to Cart"](https://github.com/ej2brown/jungle-rails/blob/master/docs/03_Add_Items_Cart.png)
+
+### My cart shows the list of items in your cart
+!["Adding Products to Cart"](https://github.com/ej2brown/jungle-rails/blob/master/docs/04_Cart.png)
+
+### User can purchase the items in the cart with credit card (using stripe)
+!["Payment with Stripe"](https://github.com/ej2brown/jungle-rails/blob/master/docs/05_Payment_with_Stripe.png)
+
+### Validation and error handling with display messages 
+
+### Will be redirected to order details page after successful payment
+!["Order detail page upon successful order"](https://github.com/ej2brown/jungle-rails/blob/master/docs/06_Order_Details.png)
+
+## Tech Stack 
+Front-end 
+- HTML
+- CSS
+- SASS-Rails
+- Bootstrap 3
+
+Back-end
+- Ruby
+- Ruby on Rails
+- ActiveRecord
+- Stripe
+- Postgresql
+
+Testing
+- RSpec
+- Capybara
 
 ## Setup
 
