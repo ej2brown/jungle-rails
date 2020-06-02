@@ -23,7 +23,7 @@ A mini e-commerce application built with Rails 4.2.
 
 ### Validation and error handling with display messages 
 
-### Will be redirected to order details page after successful payment
+### Order details page after successful payment
 !["Order detail page upon successful order"](https://github.com/ej2brown/jungle-rails/blob/master/docs/06_Order_Details.png)
 
 ## Tech Stack 
